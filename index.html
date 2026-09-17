@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Todo</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="app">
+    <header class="app__header">
+      <h1>Todo</h1>
+      <p class="app__count" id="count">0 left</p>
+    </header>
+
+    <form class="add-form" id="addForm">
+      <input
+        type="text"
+        id="todoInput"
+        class="add-form__input"
+        placeholder="Add a task…"
+        autocomplete="off"
+      />
+      <button type="submit" class="add-form__btn" aria-label="Add task">＋</button>
+    </form>
+
+    <ul class="list" id="list"></ul>
+
+    <p class="empty" id="empty">Nothing here yet. Add your first task above.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
